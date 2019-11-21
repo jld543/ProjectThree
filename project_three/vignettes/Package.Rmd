@@ -1,0 +1,27 @@
+---
+title: "PackageInstructions"
+output: html_document
+---
+
+#First install tidyverse:
+
+```{r setup, include=FALSE}
+install.packages("tidyverse")
+
+library(tidyverse)
+```
+
+## #Then download the surveys dataframe and read in the file
+
+```{r cars}
+download.file(url="https://ndownloader.figshare.com/files/2292169",
+              destfile = "/cloud/project/data/portal_data_joined.csv")
+surveys <- read.csv("/cloud/project/data/portal_data_joined.csv")  
+```
+
+## Assign data to output to use for visual
+
+```{r pressure, echo=FALSE}
+output <- surveys_weight_by_year(surveys) 
+```
+

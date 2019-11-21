@@ -1,0 +1,16 @@
+Package: JMJprojectthree
+Type: Package
+Title: Filters surveys data for mean weight by year
+Version: 1.0.0
+Authors@R: person("Jennifer", "Doucet", role = c("aut", "cre"), email = "jennifer.doucet-2@selu.edu")
+Description: An R package that looks at the mean weight by year in the surveys data
+License: MIT
+Imports:
+  tidyverse
+Suggests: 
+  knitr,
+  rmarkdown
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.0.0

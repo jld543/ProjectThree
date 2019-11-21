@@ -2,13 +2,14 @@
 title: "PackageInstructions"
 output: html_document
 ---
-
+#Install devtools then install github package:
 ```{r}
 install.packages("devtools")
-download.file("https://github.com/jld543/ProjectThree.git", destfile = "/cloud/project/project_three/package.Rmd")
+library(devtools)
+devtools::install_github("jld543/ProjectThree/project_three")
 ```
 
-#First install tidyverse:
+#Install tidyverse:
 
 ```{r setup, include=FALSE}
 install.packages("tidyverse")
@@ -30,7 +31,4 @@ surveys <- read.csv("/cloud/project/data/portal_data_joined.csv")
 output <- surveys_weight_by_year(surveys) 
 ```
 
-```{r}
 
-
-```

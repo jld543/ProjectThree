@@ -12,4 +12,3 @@ surveys_plot <- function(output){
    return(plot1)
  } 
  
- surveys_plot(output)

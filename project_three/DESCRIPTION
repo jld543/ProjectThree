@@ -6,7 +6,8 @@ Authors@R: person("Jennifer", "Doucet", role = c("aut", "cre"), email = "jennife
 Description: An R package that looks at the mean weight by year in the surveys data
 License: MIT
 Imports:
-  tidyverse
+  tidyverse,
+  magrittr
 Suggests: 
   knitr,
   rmarkdown

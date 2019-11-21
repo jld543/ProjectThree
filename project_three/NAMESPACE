@@ -2,3 +2,4 @@
 
 export(surveys_plot)
 export(surveys_weight_by_year)
+importFrom(magrittr,"%>%")

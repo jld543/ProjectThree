@@ -2,6 +2,7 @@
 #' 
 #' Filters the mean weight by year from surveys data
 #' 
+#'@importFrom magrittr %>% 
 #'@param surveys a dataset containing a column you'd like to summarize
 #'@return weights a summary of the data set
 #'@export surveys_weight_by_year 
@@ -14,4 +15,3 @@ surveys_weight_by_year <- function(surveys){
    return(weights)
    }
 
-surveys_weight_by_year(surveys)

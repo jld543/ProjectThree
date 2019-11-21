@@ -3,6 +3,11 @@ title: "PackageInstructions"
 output: html_document
 ---
 
+```{r}
+install.packages("devtools")
+download.file("https://github.com/jld543/ProjectThree.git", destfile = "/cloud/project/project_three/package.Rmd")
+```
+
 #First install tidyverse:
 
 ```{r setup, include=FALSE}
@@ -25,3 +30,7 @@ surveys <- read.csv("/cloud/project/data/portal_data_joined.csv")
 output <- surveys_weight_by_year(surveys) 
 ```
 
+```{r}
+
+
+```
